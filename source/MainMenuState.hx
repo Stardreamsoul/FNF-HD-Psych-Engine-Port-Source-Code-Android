@@ -1,6 +1,7 @@
-package;
-
-#if desktop
+  
+  
+  
+  
 import Discord.DiscordClient;
 #end
 import flixel.FlxG;
@@ -38,12 +39,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
-		#if !switch 'donate', #end
+		,'credits',
 		'options',
-		'gallery'
 	];
 
 	var magenta:FlxSprite;
@@ -354,4 +351,4 @@ class MainMenuState extends MusicBeatState
 			}
 		});
 	}
-}
+							}
